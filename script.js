@@ -13,6 +13,7 @@ mongoose.connect("mongodb://localhost/testdb")
 
   //Function to create a new user and save it to the database
   async function run (){
+   
 
     try {
         const user = await new User(
@@ -26,13 +27,13 @@ mongoose.connect("mongodb://localhost/testdb")
                 },
             
             })
-    
+
+        
         console.log(user)
         
     } catch (e) {
         console.log(e.message)
-
-        
+  
     }
     
   }
